@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:id = "@+id/RelativeLayout1"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation = "vertical" >
+    
+    <AutoCompleteTextView 
+        android:id = "@+id/tvContactsGroups"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentTop = "true"
+        android:completionThreshold = "1"
+        android:hint = "@string/contact_group_tab_name"
+        android:layout_margin = "10dp" >
+        
+        <requestFocus />      
+     </AutoCompleteTextView>
+     
+    <EditText 
+        android:id = "@+id/etBodySms"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_above = "@+id/bSaveSms"
+        android:layout_alignParentLeft = "true"
+        android:layout_below = "@+id/textView1"
+        android:hint = "@string/body_hint_name"
+        android:inputType = "textMultiLine"
+        android:layout_margin = "10dp"
+        android:gravity = "top" />
+    
+    <Button 
+        android:id = "@+id/bSaveSms"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_alignParentBottom = "true"
+        android:layout_alignParentLeft = "true"
+        android:text = "@string/save_name"
+        android:layout_marginLeft = "10dp" />
+       
+    <TextView
+        android:id = "@+id/textView1"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_alignParentRight = "true"
+        android:layout_below = "@+id/tvContactsGroups"
+        android:text = "@string/body_name"
+        android:textAppearance = "?android:attr/textAppearanceLarge"
+        android:layout_marginRight = "10dp" />  
+
+</RelativeLayout>

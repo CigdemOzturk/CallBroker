@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<menu xmlns:android = "http://schemas.android.com/apk/res/android" >
+    <item
+        android:id = "@+id/editContactGroup"
+        android:title = "@string/edit_name" >
+    </item>
+    
+	<item
+        android:id = "@+id/deleteContactGroup"
+        android:title = "@string/delete_name" >
+    </item>
+    
+	<item
+        android:id = "@+id/assignCommand"
+        android:title = "@string/assign_command_name" >
+    </item>
+
+</menu>

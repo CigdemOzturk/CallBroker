@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "app_name">ICannotAnswer</string>
+    <string name = "policy_tab_name">Policy</string>
+    <string name = "contact_group_tab_name">Contacts Group</string>
+    <string name = "add_policy_name">Add Policy</string>
+    <string name = "settings_name">Settings</string>
+    <string name = "remove_policy_name">Remove Policy</string>
+    <string name = "add_contact_group_name">Add Contacts Group</string>
+    <string name = "add_time_filter_name">Add Time Filter</string>
+    <string name = "save_name">Save</string>
+    <string name = "cancel_name">Cancel</string>
+    <string name = "name_with_double_dot_name">Name:</string>
+    <string name = "edit_policy_name">Edit Policy</string>
+    <string name = "edit_contact_group_name">Edit Contacts Group</string>
+    <string name = "edit_time_filter_name">Edit Time Filter</string>
+    <string name = "new_policy_name">New Policy</string>
+    <string name = "delete_name">Delete</string>
+    <string name = "delete_policy_dialog_name">Are you sure you want to delete this policy?</string>
+    <string name = "delete_contact_group_dialog_name">Are you sure you want to delete this contact group?</string>
+    <string name = "delete_command_dialog_name">Are you sure you want to delete this command?</string>
+    <string name = "new_contact_group_name">New Contacts_Group</string>
+    <string name = "accept_call_name">Accept Call</string>
+    <string name = "reject_call_name">Reject Call</string>
+    <string name = "send_sms_name">Send SMS</string>
+    <string name = "change_ring_mode_name">Change Ring Mode</string>
+    <string name = "ringing_name">Ringing</string>
+    <string name = "vibrate_name">Vibrate</string>
+    <string name = "silent_name">Silent</string>
+    <string name = "new_command_name">New Command</string>
+    <string name = "add_time_stamp_name">New Command</string>
+    <string name = "from_name">From</string>
+    <string name = "to_name">To</string>
+    <string name = "body_name">Body</string>
+    <string name = "body_hint_name">Write the SMS here</string>
+    <string name = "edit_name">Edit</string>
+    <string name = "assign_command_name">Assign Command</string>
+    <string name = "ignore_call_name">Ignore Call</string>
+</resources>

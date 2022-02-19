@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ica"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    
+    <uses-permission android:name = "android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name = "android.permission.CALL_PHONE"/>
+    <uses-permission android:name = "android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name = "android.permission.READ_CONTACTS"/>
+    <uses-permission android:name = "android.permission.SEND_SMS"/>
+    
+    <application
+        android:icon="@drawable/ic_accept_call"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:name="com.ica.android.ui.iCaActivity"
+            android:label="@string/app_name" 
+            android:theme = "@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name = "com.ica.android.ui.policy.PolicyManagementActivity" 
+            android:label = "@string/app_name">
+        </activity>
+        
+        <activity android:name = "com.ica.android.ui.policy.NewPolicyActivity" 
+            android:label = "@string/new_policy_name">       
+        </activity>
+        
+        <activity android:name = "com.ica.android.ui.policy.EditPolicyActivity"
+            android:label = "@string/edit_policy_name" >
+        </activity>
+        
+        <activity android:name = "com.ica.android.ui.command.CommandActivity"
+            android:label = "@string/assign_command_name">
+        </activity>
+        
+        <activity android:name = "com.ica.android.ui.contact.ContactsGroupManagementActivity"
+            android:label = "@string/app_name">
+        </activity>
+        
+        <activity android:name = "com.ica.android.ui.contact.NewContactGroupActivity"
+            android:label = "@string/new_contact_group_name">
+        </activity>
+        
+        <activity android:name = "com.ica.android.ui.contact.EditContactGroupActivity"
+            android:label = "@string/edit_contact_group_name">
+        </activity>
+        
+        <activity android:name = "com.ica.android.ui.policy.time.TimeTableManagerActivity"
+            android:label = "@string/add_time_filter_name">
+        </activity>
+        
+        <receiver android:name = ".android.service.CustomBroadcastReceiver">
+            <intent-filter android:priority = "999">
+                <action android:name = "android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+              
+    </application>
+
+</manifest>
